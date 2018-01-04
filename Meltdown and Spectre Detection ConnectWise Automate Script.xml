@@ -1,0 +1,291 @@
+﻿<LabTech_Expansion
+	Version="110.418"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6263</ScriptId>
+				<FolderId>298</FolderId>
+				<ScriptName>Meltdown and Spectre Detection</ScriptName>
+				<ScriptNotes>Author: Gavin Stone - https://www.gavsto.com
+
+If the EDFs don't load or you get an error when opening this script - import the XML twice.</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPQQrCMBRE94J3yAEa+n+1qSmfbFQEURAV92kTMZu0pA3Y20uLQl0NM8MbGDq52vrO7nSvFd2H1iqkdFK6Rr9tou9tUEDpzNH+3bowMlbdXzF0Rg8JO2ofdRgYrBOWAW6YLFGUAOxypnRG0K0Oru0fNnSu8eP0f/DtD9EZVaBcQSYkf6LWHNEWvKqE4ACY50bkKMH8+AmgdH5oufgAEB0JwuAAAAA=</LicenseData>
+				<ScriptData>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</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>71930269-f1aa-11e7-bb66-00155d65190d</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>624</ID>
+					<Form>1</Form>
+					<Name>Suggested Actions</Name>
+					<Sort>1</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>0</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Suggested Actions</Fill>
+					<LtGuid>62b98033-948a-4a3a-a511-51457b27b607</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>618</ID>
+					<Form>1</Form>
+					<Name>Hardware Support for BTI Mitigation is Present</Name>
+					<Sort>3</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Hardware Support for BTI Mitigation is Present</Fill>
+					<LtGuid>939a917e-411c-46c2-9be0-45cc6f17469f</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>619</ID>
+					<Form>1</Form>
+					<Name>Windows OS Support for BTI Mitigation is Present</Name>
+					<Sort>3</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Windows OS Support for BTI Mitigation is Present</Fill>
+					<LtGuid>eb7d7c6f-0d9f-4a52-a24f-8fd4535a0cfa</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>620</ID>
+					<Form>1</Form>
+					<Name>Windows OS Support for BTI Mitigation is Enabled</Name>
+					<Sort>3</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Windows OS Support for BTI Mitigation is Enabled</Fill>
+					<LtGuid>0614329c-194a-4e21-8874-228f0c4ce02b</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>626</ID>
+					<Form>1</Form>
+					<Name>Windows Support for BTI Disabled by System Policy</Name>
+					<Sort>3</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Windows Support for BTI Disabled by System Policy</Fill>
+					<LtGuid>82621de4-fbe7-4775-b4d6-81341f0e417f</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>629</ID>
+					<Form>1</Form>
+					<Name>Windows Support for BTI Disabled by No Hardware</Name>
+					<Sort>3</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Windows Support for BTI Disabled by No Hardware Support</Fill>
+					<LtGuid>42dbb874-35e4-4d0c-810b-a8d2c4ada860</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>621</ID>
+					<Form>1</Form>
+					<Name>Hardware requires kernel VA Shadowing</Name>
+					<Sort>3</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Hardware requires kernel VA Shadowing</Fill>
+					<LtGuid>632f2d71-4ca9-4ab7-a511-ba287ae27c71</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>622</ID>
+					<Form>1</Form>
+					<Name>Windows OS Support for Kernel VAShadow is Present</Name>
+					<Sort>3</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Windows OS Support for Kernel VAShadow is Present</Fill>
+					<LtGuid>f784b560-0449-4ee0-9c38-2cfe3fab49ac</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>623</ID>
+					<Form>1</Form>
+					<Name>Windows OS Support for Kernel VAShadow is Enabled</Name>
+					<Sort>3</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Windows OS Support for Kernel VAShadow is Enabled</Fill>
+					<LtGuid>a631c838-f4fd-4881-a97a-ae38caf3c4c2</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>628</ID>
+					<Form>1</Form>
+					<Name>Windows support for PCID optimization is enabled</Name>
+					<Sort>3</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Windows support for PCID optimization is enabled</Fill>
+					<LtGuid>e2c2dd2a-aa06-4ca2-9bb8-82fe83a94081</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>630</ID>
+					<Form>1</Form>
+					<Name>Is The Machine Secure?</Name>
+					<Sort>0</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Is The Machine Secure?</Fill>
+					<LtGuid>c7e52691-0a6b-483d-9436-9989f9cf2403</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>298</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Meltdown and Spectre Detection</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>
