@@ -14,7 +14,7 @@
   Original Author - Microsoft Security Response Center https://www.powershellgallery.com/packages/SpeculationControl/1.0.0
   ConnectWise Automate Integration Modifications: Gavin Stone https://www.gavsto.com
 
-  Version 1.3.
+  Version 1.3.1
   
   #>
 
@@ -310,6 +310,7 @@
 
             if ($automateOutput)
             {
+                $automateFinalOutput.Action = "None - Secure"
                 $automateFinalOutput.IsTheMachineSecure = $True
             }
         }
