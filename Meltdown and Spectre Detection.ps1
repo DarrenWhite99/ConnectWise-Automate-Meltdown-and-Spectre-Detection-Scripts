@@ -44,6 +44,9 @@
         # Query branch target injection information.
         #
 
+        # Create an empty hashtable to start holding the Automate Output
+        $automateFinalOutput = @{}
+
         if (!$automateOutput)
         {
             Write-Host "Speculation control settings for CVE-2017-5715 [branch target injection]" -ForegroundColor Cyan
@@ -52,10 +55,16 @@
 
 
         $btiHardwarePresent = $false
+        $automateFinalOutput.btiHardwarePresent = $false
         $btiWindowsSupportPresent = $false
+        $automateFinalOutput.btiWindowsSupportPresent = $false
         $btiWindowsSupportEnabled = $false
+        $automateFinalOutput.btiWindowsSupportEnabled = $false
         $btiDisabledBySystemPolicy = $false
+        $automateFinalOutput.btiDisabledBySystemPolicy = $false
         $btiDisabledByNoHardwareSupport = $false
+        $automateFinalOutput.btiDisabledByNoHardwareSupport = $false
+        $automateFinalOutput.securefinal = $False
     
         [System.UInt32]$systemInformationClass = 201
         [System.UInt32]$systemInformationLength = 4
@@ -83,6 +92,7 @@
 
             $btiHardwarePresent = ((($flags -band $scfHwReg1Enumerated) -ne 0) -or (($flags -band $scfHwReg2Enumerated)))
             $btiWindowsSupportPresent = $true
+            $automateFinalOutput.btiWindowsSupportPresent = $true
             $btiWindowsSupportEnabled = (($flags -band $scfBpbEnabled) -ne 0)
 
             if ($btiWindowsSupportEnabled -eq $false) {
@@ -108,9 +118,6 @@
             Write-Host "Windows OS support for branch target injection mitigation is present:"($btiWindowsSupportPresent) -ForegroundColor $(If ($btiWindowsSupportPresent) { [System.ConsoleColor]::Green } Else { [System.ConsoleColor]::Red })
             Write-Host "Windows OS support for branch target injection mitigation is enabled:"($btiWindowsSupportEnabled) -ForegroundColor $(If ($btiWindowsSupportEnabled) { [System.ConsoleColor]::Green } Else { [System.ConsoleColor]::Red })
         }
-
-        # Create an empty hashtable to start holding the Automate Output
-        $automateFinalOutput = @{}
 
         if ($automateOutput)
         {
@@ -151,9 +158,13 @@
         }  
 
         $kvaShadowRequired = $true
+        $automateFinalOutput.kvaShadowRequired = $true
         $kvaShadowPresent = $false
+        $automateFinalOutput.kvaShadowPresent = $false
         $kvaShadowEnabled = $false
+        $automateFinalOutput.kvaShadowEnabled = $false
         $kvaShadowPcidEnabled = $false
+        $automateFinalOutput.kvaspcide = $false
 
         $cpu = Get-WmiObject Win32_Processor
 
@@ -177,6 +188,7 @@
                      ($model -eq 0x35))) {
 
                     $kvaShadowRequired = $false
+                    $automateFinalOutput.kvaShadowRequired = $false
                 }
             }
         }
@@ -204,6 +216,7 @@
             [System.UInt32]$flags = [System.UInt32][System.Runtime.InteropServices.Marshal]::ReadInt32($systemInformationPtr)
 
             $kvaShadowPresent = $true
+            $automateFinalOutput.kvaShadowPresent = $true
             $kvaShadowEnabled = (($flags -band $kvaShadowEnabledFlag) -ne 0)
             $kvaShadowPcidEnabled = ((($flags -band $kvaShadowPcidFlag) -ne 0) -and (($flags -band $kvaShadowInvpcidFlag) -ne 0))
 
@@ -246,7 +259,14 @@
 
                 if ($automateOutput)
                 {
-                    $automateFinalOutput.kvaShadowPcidEnabled = $kvaShadowPcidEnabled
+                    $automateFinalOutput.kvaspcide = $kvaShadowPcidEnabled
+                }
+            }
+            else
+            {
+                if ($automateOutput)
+                {
+                    $automateFinalOutput.kvaspcide = $kvaShadowPcidEnabled
                 }
             }
         }
@@ -296,7 +316,7 @@
                     $automateFinalOutput.Action += $action
             }
 
-            $automateFinalOutput.IsTheMachineSecure = $False
+            $automateFinalOutput.securefinal = $False
 
             }
         }
@@ -311,7 +331,7 @@
             if ($automateOutput)
             {
                 $automateFinalOutput.Action = "None - Secure"
-                $automateFinalOutput.IsTheMachineSecure = $True
+                $automateFinalOutput.securefinal = $True
             }
         }
 
@@ -322,7 +342,7 @@
             $finalOutput = [string]::Join("|",($automateFinalOutput.GetEnumerator() | %{$_.Name + "=" + $_.Value}))
             $finalOutput = $finalOutput.Replace("True","1")
             $finalOutput = $finalOutput.Replace("False","0")
-            Write-Output $finalOutput
+            Write-Host $finalOutput
         }
 
         if(!$automateOutput)
