@@ -1,5 +1,6 @@
 # ConnectWise-Automate-Meltdown-and-Spectre-Detection-Scripts
 Adapted Powershell Script to extract fields into EDFs within ConnectWise Automate. If you have problems generating the EDFs then import the XML twice.
+Added three registry add scripts thanks to @snix
 
 Only the .XML is needed - this has the .PS1 included here attached within it.
 
