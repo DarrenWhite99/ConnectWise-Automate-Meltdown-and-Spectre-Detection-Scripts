@@ -31,6 +31,9 @@ As per the attached license, THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY 
   | --- | --- |
   | Is The Machine Secure? | Will only tick when all other conditions are met and the machine is deemed secure | 
   | Suggested Actions | Output from powershell suggesting next actions |
+  | Date Time Last Ran | Date the detection in the script last ran |
+  | Date of Last Run | Date the detection in the script last ran |
+  | AV Key Set so Updates Can Occur | The registry key allowing for the MS updates to be detected is set so updates should detect when next scanned |
   | Hardware requires kernel VA Shadowing | | 
   | Hardware Support for BTI Mitigation is Present | | 
   | Windows OS Support for BTI Mitigation is Enabled | | 
