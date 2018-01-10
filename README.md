@@ -4,6 +4,7 @@
   - Three registry add scripts thanks to @snix
   - Only the .XML is needed - this has the .PS1 included here attached within it.
   - This should work on any Machine with Powershell 2 or above.
+  - Thank you to @kgrube and @Matthew for their significant input into this ReadMe
 
 ## Usage
 
@@ -33,15 +34,15 @@ As per the attached license, THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY 
   | Suggested Actions | Output from powershell suggesting next actions |
   | Date of Last Run | Date the detection in the script last ran |
   | AV Key Set so Updates Can Occur | The registry key allowing for the MS updates to be detected is set so updates should detect when next scanned |
-  | Hardware requires kernel VA Shadowing | | 
-  | Hardware Support for BTI Mitigation is Present | | 
-  | Windows OS Support for BTI Mitigation is Enabled | | 
-  | Windows OS Support for BTI Mitigation is Present | | 
-  | Windows OS Support for Kernal VAShadow is Enabled | |
-  | Windows OS Support for Kernal VAShadow is Present | |
-  | Windows Support for BTI Disabled by No Hardware | |
-  | Windows Support for BTI Disabled by System Policy | |
-  | Windows support for PCID optimization is enabled | |
+  | Hardware requires kernel VA Shadowing | This will be True for all CPU architecture vulnerable to Meltdown i.e. Intel.  It will show as False if not, i.e. on an AMD based system | 
+  | Hardware Support for BTI Mitigation is Present | This indicates if the required firmware/bios update has occurred to expose the new MSR’s into OS. Without the firmware, no Spectre mitigations can be enabled. | 
+  | Windows OS Support for BTI Mitigation is Enabled | Simple indicates if mitigation is active (True) or inactive (False). This will depend on the other settings and is not a configurable. | 
+  | Windows OS Support for BTI Mitigation is Present | If true, the relevant security patch has been deployed. If false, the patch is missing or reboot has not taken place | 
+  | Windows OS Support for Kernal VAShadow is Enabled | Will be True if the relevant registry keys have been “enabled” (post reboot), if not will show False. |
+  | Windows OS Support for Kernal VAShadow is Present | Will be True if the relevant Microsoft Windows patch has been installed (post reboot). If patch has not been installed, it will be False. |
+  | Windows Support for BTI Disabled by No Hardware | Will be True if no microcode update has been performed on the system. Microcode (firmware/bios) is required to add the relevant values relative to Meltdown |
+  | Windows Support for BTI Disabled by System Policy | Will be True if the mitigation registry keys have been set to disable, otherwise should ready false. |
+  | Windows support for PCID optimization is enabled | Will only show once machine has been patched. PCID is not required in order for mitigations to work, but when present and active can help by reducing performance deg, though this is workload dependent. |
   
 ## Patches
 
