@@ -10,7 +10,9 @@
 				<ScriptName>Meltdown and Spectre Detection</ScriptName>
 				<ScriptNotes>Author: Gavin Stone - https://www.gavsto.com
 
-If the EDFs don't load or you get an error when opening this script - import the XML twice.</ScriptNotes>
+If the EDFs don't load or you get an error when opening this script - import the XML twice.
+
+1.0.5</ScriptNotes>
 				<Permission>0,</Permission>
 				<EditPermission>0,</EditPermission>
 				<ComputerScript>1</ComputerScript>
@@ -18,13 +20,36 @@ If the EDFs don't load or you get an error when opening this script - import the
 				<MaintenanceScript>0</MaintenanceScript>
 				<FunctionScript>0</FunctionScript>
 				<LicenseData>H4sIAAAAAAAEAFWPQQrCMBRE94J3yAEa+n+1qSmfbFQEURAV92kTMZu0pA3Y20uLQl0NM8MbGDq52vrO7nSvFd2H1iqkdFK6Rr9tou9tUEDpzNH+3bowMlbdXzF0Rg8JO2ofdRgYrBOWAW6YLFGUAOxypnRG0K0Oru0fNnSu8eP0f/DtD9EZVaBcQSYkf6LWHNEWvKqE4ACY50bkKMH8+AmgdH5oufgAEB0JwuAAAAA=</LicenseData>
-				<ScriptData>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</ScriptData>
+				<ScriptData>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</ScriptData>
 				<ScriptVersion>1</ScriptVersion>
 				<ScriptGuid>71930269-f1aa-11e7-bb66-00155d65190d</ScriptGuid>
 				<ScriptFlags>0</ScriptFlags>
 				<Parameters></Parameters>
 			</Table>
 		</NewDataSet>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>633</ID>
+					<Form>1</Form>
+					<Name>Date of Last Run</Name>
+					<Sort>5</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Date of Last Run of Detection Script</Fill>
+					<LtGuid>05b66cea-079b-4188-8384-cfbc687c5c5a</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
 		<ExtraDataField>
 			<NewDataSet>
 				<Table>
@@ -278,12 +303,36 @@ If the EDFs don't load or you get an error when opening this script - import the
 				</Table>
 			</NewDataSet>
 		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>632</ID>
+					<Form>1</Form>
+					<Name>AV Key Set so Updates Can Occur</Name>
+					<Sort>2</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Meltdown and Spectre Detection</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>AV Key Set so Updates Can Occur</Fill>
+					<LtGuid>5d4f7a14-cd6e-459c-83c0-ee252cf15388</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
 		<ScriptFolder>
 			<NewDataSet>
 				<Table>
 					<FolderID>298</FolderID>
 					<ParentID>0</ParentID>
 					<Name>Meltdown and Spectre Detection</Name>
+					<GUID>345eb37c-a879-4c41-a33f-c5f4c60797a3</GUID>
 				</Table>
 			</NewDataSet>
 		</ScriptFolder>
