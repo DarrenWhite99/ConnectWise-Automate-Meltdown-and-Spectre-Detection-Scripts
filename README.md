@@ -41,7 +41,7 @@ As per the attached license, THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY 
   | Windows OS Support for Kernal VAShadow is Enabled | Will be True if the relevant registry keys have been “enabled” (post reboot), if not will show False. |
   | Windows OS Support for Kernal VAShadow is Present | Will be True if the relevant Microsoft Windows patch has been installed (post reboot). If patch has not been installed, it will be False. |
   | Windows Support for BTI Disabled by No Hardware | Will be True if no microcode update has been performed on the system. Microcode (firmware/bios) is required to add the relevant values relative to Meltdown |
-  | Windows Support for BTI Disabled by System Policy | Will be True if the mitigation registry keys have been set to disable, otherwise should ready false. |
+  | Windows Support for BTI Disabled by System Policy | Will be True if the mitigation registry keys have been set to disable, otherwise should read false. |
   | Windows support for PCID optimization is enabled | Will only show once machine has been patched. PCID is not required in order for mitigations to work, but when present and active can help by reducing performance deg, though this is workload dependent. |
   
 ## Patches
