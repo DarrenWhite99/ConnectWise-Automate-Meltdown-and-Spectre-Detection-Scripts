@@ -2,6 +2,7 @@
 
   - Adapted Powershell Script to extract fields into EDFs within ConnectWise Automate. If you have problems generating the EDFs then import the XML twice.
   - Three registry add scripts thanks to @snix
+  - Dataview contributed by @DarrenWhite99, with appreciation to #labtech-security in LabTechGeek Slack
   - Only the .XML is needed - this has the .PS1 included here attached within it.
   - This should work on any Machine with Powershell 2 or above.
   - Thank you to @kgrube and @Matthew for their significant input into this ReadMe
@@ -11,8 +12,10 @@
 1) Download the latest release from [here](https://github.com/gavsto/ConnectWise-Automate-Meltdown-and-Spectre-Detection-Scripts/releases/latest).
 2) Import XML Scripts (Meltdown and Spectre - Detection ConnectWise Automate Script.xml)
    - Twice; if you're still having problems reload the system cache and try again
-3) Ensure EDFs have created by opening an Agent, going to EDFs, going to the Meltdown and Spectre Detection Section.  Make sure EDFs are all there.
-4) Run the script (by default, this imports into Scripts > Meltdown and Spectre Detection), against an agent, which will populate the EDFs
+3) Import the SQL Dataview file (DATAVIEW - Spectre and Meltdown Assessment.sql). 
+   - This will also trigger a rebuild of the computer EDF table which should help make EDF's available.
+4) Reload System Cache, then verify EDFs have been created by opening an Agent, going to EDFs, going to the Meltdown and Spectre Detection Section.  Make sure EDFs are all there.
+5) Run the script (by default, this imports into Scripts > Meltdown and Spectre Detection), against an agent, which will populate the EDFs
 
 As per the attached license, THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. This exploit/bug is complex and multi-layered.
 
