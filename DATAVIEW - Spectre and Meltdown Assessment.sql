@@ -21,7 +21,3 @@ UserClassName='',
 GUID='5d8e9f93-dfbf-4baa-bd28-e1244a0f62b0',
 SystemPermissionHigh='0';
 CALL v_extradata(1,'Computers');
-SystemPermission='0',
-UserClassName='',
-GUID='5d8e9f93-dfbf-4baa-bd28-e1244a0f62b0',
-SystemPermissionHigh='0';
